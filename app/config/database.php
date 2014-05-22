@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => '127.0.0.1',
-			'database'  => 'database',
+			'database'  => 'todo',
 			'username'  => 'root',
 			'password'  => 'Mayauru556545085',
 			'charset'   => 'utf8',
