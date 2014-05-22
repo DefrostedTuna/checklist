@@ -1,0 +1,231 @@
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 150px;
+	background: url('../img/bg.jpg');
+	//background: #eee;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+#navigation-bar {
+	/position: absolute;
+	/bottom: 5px;
+	/margin-top: 5px;
+	/height: 70px;
+	width: 100%;
+	color: gray;
+	box-shadow: 0 2px 2px -2px gray;
+	/border-bottom: 1px solid gray;
+	/*---Backgrounds---*/
+	/*---Backgrounds---*/
+}
+
+#navigation-bar ul {
+	text-align: center;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#navigation-bar li {
+	display: inline-block;
+	font-size: 1.5em;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#navigation-bar a {
+	padding: 10px;
+	border-radius 3px;
+	color: black;
+	text-decoration: none;
+	text-shadow: 1px 1px 3px gray;
+}
+
+#navigation-bar a:hover {
+	color: black;
+	text-decoration: underline;
+	background: #eee;
+	border-radius: 5px 5px 0px 0px;
+}
+
+#header {
+	/position: relative;
+	/height: 110px;
+	padding: 10px; 
+	width: 100%;
+	background: url('../img/navbar.png');
+	box-shadow: 4px 4px 5px black;
+}
+
+#global {
+	margin-top: 30px;
+	text-align: center;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 0px;
+	border: none;
+}
+
+.container {
+	padding: 0px;
+	max-width: 95%;
+}
+
+#main-container {
+	margin: 0px auto;
+	margin-top: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 96%;
+	max-width: 1100px;
+}
+
+.bg {
+	background: white;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+	border-top: 3px solid orange;	
+}
+
+#change_password {
+	margin-bottom: 10px;
+}
+
+input[type=text], input[type=password] {
+	margin: 10px auto;
+	display: block;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+
+#register {
+	margin-bottom: 10px;
+}
+
+#register input[type=text], #register input[type=password] {
+	margin: 10px auto;
+	display: block;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+
+#login {
+	margin-bottom: 10px;
+}
+
+#login input[type=text], #login input[type=password] {
+	margin: 10px auto;
+	display: block;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+
+#checklists ul {
+	list-style: none;
+	padding-left: 10px;
+}
+
+#checklists li {
+	padding: 3px;
+}
+
+#items_list {
+	border-left: 1px solid gray;
+}
+
+#items_list ul {
+	list-style: none;
+}
+
+#add_items {
+	display: none;
+}
+
+/*#add_items input[type=text] {
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid gray;
+}*/
+
+#add_items_bulk {
+	margin-bottom: 10px;
+}
+
+/*#add_items_bulk input[type=text] {
+	display: block;
+	margin: 10px auto;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid gray;
+}*/
+
+#add_list {
+	display: none;
+}
+
+/*#add_list input[type=text] {
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid gray;
+}*/
+
+label:hover {
+	cursor: hand;
+	cursor: pointer;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px; 
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  background: url('../img/footer.png');
+  color: white;
+  box-shadow: 0 -4px 5px -2px black;
+  /background-color: #f5f5f5;
+}
+
+.panel {
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+	float: none;
+	text-align: center;
+	margin: 0px auto;
+}
+
+.il-block {
+	display: inline-block;
+}
+
+.block {
+	display: block;
+}
+
+.spacer {
+	margin: 10px;
+}
+
+.errors {
+	color: red;
+	font-weight: bold;
+}
+
+img {
+	max-width: 98%;
+}
+
+.extra-padding {
+	padding: 20px;
+}
+
+ul {
+	list-style: none;
+}
