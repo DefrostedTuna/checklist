@@ -11,8 +11,18 @@
 			<div id="login" class="center">
 				{{ Form::open(array('url' => URL::route('account-log-in'), 'method' => 'post', 'autocomplete' => 'off')) }}
 
+				@if($errors->has('email'))
+					<div class="errors center">
+						{{ $errors->first('email') }}
+					</div>
+				@endif
 				<input type="text" name="email" id="email" placeholder="Email">
 
+				@if($errors->has('password'))
+					<div class="errors center">
+						{{ $errors->first('password') }}
+					</div>
+				@endif
 				<input type="password" name="password" id="password" placeholder="Password">
 
 				<input type="submit" value="Log In" class="btn btn-primary">

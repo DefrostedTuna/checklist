@@ -16,12 +16,48 @@
 					<input type="password" name="password_fake" id="password_fake" value="" style="display:none;" />
 					<!--fake inputs for google chrome workaround-->
 
+					@if($errors->has('email'))
+						<div class="errors center">
+							{{ $errors->first('email') }}
+						</div>
+					@endif
 					<input type="text" name="email" id="email" placeholder="Email">
+					
+					@if($errors->has('username'))
+						<div class="errors center">
+							{{ $errors->first('username') }}
+						</div>
+					@endif
 					<input type="text" name="username" id="username" placeholder="Username">
+					
+					@if($errors->has('first_name'))
+						<div class="errors center">
+							{{ $errors->first('first_name') }}
+						</div>
+					@endif
 					<input type="text" name="first_name" id="first_name" placeholder="First Name">
+					
+					@if($errors->has('last_name'))
+						<div class="errors center">
+							{{ $errors->first('last_name') }}
+						</div>
+					@endif
 					<input type="text" name="last_name" id="last_name" placeholder="Last Name">
+					
+					@if($errors->has('password'))
+						<div class="errors center">
+							{{ $errors->first('password') }}
+						</div>
+					@endif
 					<input type="password" name="password" id="password" placeholder="Password">
+					
+					@if($errors->has('confirm_password'))
+						<div class="errors center">
+							{{ $errors->first('confirm_password') }}
+						</div>
+					@endif
 					<input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+					
 					<input type="submit" value="Register" class="btn btn-primary">
 				{{ Form::close() }}	
 			</div>

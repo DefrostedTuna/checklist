@@ -2,7 +2,9 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 150px;
 	background: url('../img/bg.jpg');
-	//background: #eee;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
 }
 
 html {

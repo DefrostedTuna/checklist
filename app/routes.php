@@ -209,7 +209,7 @@ Route::get('/', array(
 
 				Route::get('/list/view/{list}', array(
 					'as' 	=> 'list-items',
-					'uses'	 => 'Checklistcontroller@getItems'
+					'uses'	 => 'ChecklistController@getItems'
 				));
 
 				Route::get('list/view/{list}/add-batch', array(
