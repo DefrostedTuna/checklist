@@ -41,6 +41,7 @@
 		<div id="add_items" class="center">
 			<hr>
 			{{ Form::open(array('url' => URL::route('list-items-add', $checklist->id)))}}
+			<br>
 			<input type="text" name="name" id="name" placeholder="New Item">
 
 			<input type="hidden" name="checklist_id" id="checklist_id" value="{{ $checklist->id }}">
