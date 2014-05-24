@@ -21,28 +21,28 @@
 							{{ $errors->first('email') }}
 						</div>
 					@endif
-					<input type="text" name="email" id="email" placeholder="Email">
+					<input type="text" name="email" id="email" placeholder="Email" value="{{ Input::old('email') ? Input::old('email') : '' }}">
 					
 					@if($errors->has('username'))
 						<div class="errors center">
 							{{ $errors->first('username') }}
 						</div>
 					@endif
-					<input type="text" name="username" id="username" placeholder="Username">
+					<input type="text" name="username" id="username" placeholder="Username" value="{{ Input::old('username') ? Input::old('username') : '' }}">
 					
 					@if($errors->has('first_name'))
 						<div class="errors center">
 							{{ $errors->first('first_name') }}
 						</div>
 					@endif
-					<input type="text" name="first_name" id="first_name" placeholder="First Name">
+					<input type="text" name="first_name" id="first_name" placeholder="First Name" value="{{ Input::old('first_name') ? Input::old('first_name') : '' }}">
 					
 					@if($errors->has('last_name'))
 						<div class="errors center">
 							{{ $errors->first('last_name') }}
 						</div>
 					@endif
-					<input type="text" name="last_name" id="last_name" placeholder="Last Name">
+					<input type="text" name="last_name" id="last_name" placeholder="Last Name" value="{{ Input::old('last_name') ? Input::old('last_name') : '' }}">
 					
 					@if($errors->has('password'))
 						<div class="errors center">
