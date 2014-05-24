@@ -9,7 +9,7 @@
 	
 		<div class="panel-body">
 			<div id="login" class="center">
-				{{ Form::open(array('url' => URL::route('account-log-in'), 'method' => 'post', 'autocomplete' => 'off')) }}
+				{{ Form::open(array('url' => URL::route('account-log-in'), 'method' => 'post')) }}
 
 				@if($errors->has('email'))
 					<div class="errors center">

@@ -9,7 +9,7 @@
 	
 		<div class="panel-body">
 			<div id="register" class="center">
-				{{ Form::open(array('route' => 'account-create', 'method' => 'post', 'autocomplete' => 'off')) }}
+				{{ Form::open(array('route' => 'account-create', 'method' => 'post')) }}
 					
 					<!--fake inputs for google chrome workaround-->
 					<input type="text" name="prevent_autofill" id="prevent_autofill" value="" style="display:none;" />
