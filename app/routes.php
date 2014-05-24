@@ -243,7 +243,7 @@ Route::get('/', array(
 
 						Route::post('/list/view/{list}', array(
 							'as' 	=> 'list-items',
-							'uses'	 => 'Checklistcontroller@postItems'
+							'uses'	 => 'ChecklistController@postItems'
 						));
 
 						Route::post('list/view/{list}/add', array(
